@@ -163,7 +163,7 @@ INSERT INTO actors (title, name, character)
 .print ""
 
 -- The SQL statement for the movies output
-SELECT * FROM movie;
+SELECT title, year, MPAA_rating, studio FROM movie;
 
 -- Prints a header for the cast output
 .print ""
@@ -173,4 +173,4 @@ SELECT * FROM movie;
 
 
 -- The SQL statement for the cast output
-SELECT * FROM actors;
+SELECT title, name, character FROM actors;
